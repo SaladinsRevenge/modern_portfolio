@@ -147,6 +147,33 @@ main {
   }
 }
 
+///////////////////////////// Contact Page ///////////////////////////
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+
+  div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    @include easeOut;
+
+    &:hover {
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      span {
+        color: set-text-color($secondary-color);
+      }
+    }
+  }
+}
+
+//////////////////////// Button Styles for Work Page ///////////////////
+
 .btn-dark {
   @extend .btn;
   background: darken($primary-color, 50);
