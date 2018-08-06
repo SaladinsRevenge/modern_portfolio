@@ -68,6 +68,10 @@
 
 // Smart phones
 @include mediaSm {
+  .lg-heading {
+    font-size: 0.3rem;
+  }
+
   main#home h1 {
     margin-top: 10vh;
   }
