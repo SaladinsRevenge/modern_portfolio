@@ -57,7 +57,7 @@
       height: 250px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px #42c0fb;
+      border: solid 3px #007fff;
       background-size: cover; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -65,7 +65,7 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #42c0fb; }
+      color: #007fff; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -77,7 +77,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #42c0fb; }
+      color: #007fff; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -131,6 +131,8 @@
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
+  .lg-heading {
+    font-size: 0.3rem; }
   main#home h1 {
     margin-top: 10vh; }
   .projects {
@@ -159,7 +161,7 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 5rem; }
+    font-size: 3rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -177,7 +179,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #42c0fb; }
+  color: #007fff; }
 
 main {
   padding: 4rem;
@@ -187,7 +189,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #42c0fb;
+        color: #007fff;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -203,13 +205,13 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: 3px solid #42c0fb;
+    border: 3px solid #007fff;
     height: 250px;
     width: 250px; }
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #42c0fb 5px solid; }
+    border-bottom: #007fff 5px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -226,10 +228,10 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border: 3px solid #42c0fb; }
+    border: 3px solid #007fff; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #42c0fb;
+      border-color: #007fff;
       transition: all 0.5s ease-out; }
 
 .btn, .btn-dark, .btn-light {
@@ -238,7 +240,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #42c0fb;
+    background: #007fff;
     color: #000; }
 
 .boxes {
@@ -253,7 +255,7 @@ main {
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
-      background: #42c0fb;
+      background: #007fff;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -313,6 +315,8 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
+  .lg-heading {
+    font-size: 0.3rem; }
   main#home h1 {
     margin-top: 10vh; }
   .projects {
