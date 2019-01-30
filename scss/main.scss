@@ -149,26 +149,46 @@ main {
 
 ///////////////////////////// Contact Page ///////////////////////////
 
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 1rem;
+.main-form {
+  margin: 30px auto;
+  max-width: 400px;
+  padding: 20px;
 
-  div {
+  .form-group {
+    margin-top: 1rem;
+  }
+  .form-group label {
+    display: block;
     font-size: 2rem;
-    border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
-    @include easeOut;
-
-    &:hover {
-      background: $secondary-color;
-      color: set-text-color($secondary-color);
-      span {
-        color: set-text-color($secondary-color);
-      }
-    }
+    text-align: center;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: #ddd 1px solid;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  textarea {
+    height: 10rem;
+  }
+  &:focus {
+    border-color: $secondary-color;
+  }
+  button {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+    background: $secondary-color;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    cursor: pointer;
   }
 }
 
